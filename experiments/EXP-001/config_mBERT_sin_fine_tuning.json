@@ -1,0 +1,75 @@
+{
+  "experimento": {
+    "id": "EXP-001",
+    "fecha": "2026-03-01 23:53",
+    "responsable": "Fatima Ferreira - Blanca Franco",
+    "descripcion": "mBERT sin fine tuning — semilla 42",
+    "semilla": 42
+  },
+  "modelo": {
+    "nombre": "mBERT",
+    "nombre_huggingface": "google-bert/bert-base-multilingual-cased",
+    "modalidad": "sin_fine_tuning",
+    "num_labels": 2
+  },
+  "tokenizacion": {
+    "max_length": 512,
+    "stride": 384,
+    "estrategia": "sliding_window_manual",
+    "padding": "manual_con_pad_token_id"
+  },
+  "entrenamiento": {
+    "epochs": 5,
+    "batch_size": 16,
+    "learning_rate": 3e-05,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "warmup_steps": 300,
+    "fp16": true,
+    "early_stopping_patience": 2,
+    "class_weights": true,
+    "aggregacion_predicciones": "promedio_probabilidades_por_documento"
+  },
+  "datos": {
+    "dataset": "PyCrim",
+    "archivo": "corpusJurisprudence.txt",
+    "zenodo": "https://zenodo.org/records/14373749",
+    "split_train": 0.7,
+    "split_val": 0.15,
+    "split_test": 0.15,
+    "split_estrategia": "aleatorio_estratificado",
+    "random_state": 42,
+    "total_muestras": 5000,
+    "balance_clases": {
+      "clase_0_pct": 80.94,
+      "clase_1_pct": 19.06
+    }
+  },
+  "entorno": {
+    "python_version": "3.12.12",
+    "torch_version": "2.10.0+cu128",
+    "transformers_version": "5.0.0",
+    "plataforma": "Google Colab",
+    "gpu": "Tesla T4"
+  },
+  "resultados": {
+    "tiempo_minutos": 32.26,
+    "mejor_epoch": null,
+    "test": {
+      "accuracy": 0.756,
+      "f1_macro": 0.6943,
+      "f1_clase_positiva": 0.5569,
+      "f1_clase_negativa": 0.8316,
+      "precision_macro": 0.6838,
+      "recall_macro": 0.7744,
+      "precision_clase_positiva": 0.4259,
+      "recall_clase_positiva": 0.8042
+    },
+    "matriz_confusion": {
+      "TP": 115,
+      "TN": 452,
+      "FP": 155,
+      "FN": 28
+    }
+  }
+}
