@@ -1,7 +1,7 @@
 {
   "experimento": {
     "id": "EXP-001",
-    "fecha": "2026-03-01 23:53",
+    "fecha": "2026-03-02 02:51",
     "responsable": "Fatima Ferreira - Blanca Franco",
     "descripcion": "mBERT sin fine tuning — semilla 42",
     "semilla": 42
@@ -53,7 +53,7 @@
     "gpu": "Tesla T4"
   },
   "resultados": {
-    "tiempo_minutos": 32.26,
+    "tiempo_minutos": 30.52,
     "mejor_epoch": null,
     "test": {
       "accuracy": 0.756,
