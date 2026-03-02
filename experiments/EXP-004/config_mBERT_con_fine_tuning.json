@@ -1,7 +1,7 @@
 {
   "experimento": {
     "id": "EXP-004",
-    "fecha": "2026-03-02 05:51",
+    "fecha": "2026-03-02 06:48",
     "responsable": "Fatima Ferreira - Blanca Franco",
     "descripcion": "mBERT con fine tuning — semilla 42",
     "semilla": 42
@@ -53,23 +53,23 @@
     "gpu": "Tesla T4"
   },
   "resultados": {
-    "tiempo_minutos": 51.43,
-    "mejor_epoch": "/content/drive/MyDrive/Proyecto/PyCrim_experiments/EXP-004/checkpoints/checkpoint-2141",
+    "tiempo_minutos": 84.51,
+    "mejor_epoch": "/content/drive/MyDrive/Proyecto/PyCrim_experiments/EXP-004/checkpoints/checkpoint-8564",
     "test": {
-      "accuracy": 0.1907,
-      "f1_macro": 0.1601,
-      "f1_clase_positiva": 0.3203,
-      "f1_clase_negativa": 0.0,
-      "precision_macro": 0.0953,
-      "recall_macro": 0.5,
-      "precision_clase_positiva": 0.1907,
-      "recall_clase_positiva": 1.0
+      "accuracy": 0.8453,
+      "f1_macro": 0.7706,
+      "f1_clase_positiva": 0.6398,
+      "f1_clase_negativa": 0.9015,
+      "precision_macro": 0.7527,
+      "recall_macro": 0.7975,
+      "precision_clase_positiva": 0.5754,
+      "recall_clase_positiva": 0.7203
     },
     "matriz_confusion": {
-      "TP": 143,
-      "TN": 0,
-      "FP": 607,
-      "FN": 0
+      "TP": 103,
+      "TN": 531,
+      "FP": 76,
+      "FN": 40
     }
   }
 }
