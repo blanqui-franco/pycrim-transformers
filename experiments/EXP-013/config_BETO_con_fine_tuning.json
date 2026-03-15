@@ -1,0 +1,75 @@
+{
+  "experimento": {
+    "id": "EXP-013",
+    "fecha": "2026-03-15 21:49",
+    "responsable": "Fatima Ferreira - Blanca Franco",
+    "descripcion": "BETO con fine tuning — semilla 42",
+    "semilla": 42
+  },
+  "modelo": {
+    "nombre": "BETO",
+    "nombre_huggingface": "dccuchile/bert-base-spanish-wwm-cased",
+    "modalidad": "con_fine_tuning",
+    "num_labels": 2
+  },
+  "tokenizacion": {
+    "max_length": 512,
+    "stride": 384,
+    "estrategia": "sliding_window_manual",
+    "padding": "manual_con_pad_token_id"
+  },
+  "entrenamiento": {
+    "epochs": 5,
+    "batch_size": 16,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "warmup_steps": 300,
+    "fp16": true,
+    "early_stopping_patience": 2,
+    "class_weights": true,
+    "aggregacion_predicciones": "promedio_probabilidades_por_documento"
+  },
+  "datos": {
+    "dataset": "PyCrim",
+    "archivo": "corpusJurisprudence.txt",
+    "zenodo": "https://zenodo.org/records/14373749",
+    "split_train": 0.6,
+    "split_val": 0.15,
+    "split_test": 0.25,
+    "split_estrategia": "replicando_clasicos_random_state_0_sin_estratificacion",
+    "random_state": 42,
+    "total_muestras": 5000,
+    "balance_clases": {
+      "clase_0_pct": 80.94,
+      "clase_1_pct": 19.06
+    }
+  },
+  "entorno": {
+    "python_version": "3.12.12",
+    "torch_version": "2.10.0+cu128",
+    "transformers_version": "5.0.0",
+    "plataforma": "Google Colab Pro",
+    "gpu": "NVIDIA A100-SXM4-40GB"
+  },
+  "resultados": {
+    "tiempo_minutos": 16.78,
+    "mejor_epoch": "/content/drive/MyDrive/Proyecto/PyCrim_experiments/EXP-013/checkpoints/checkpoint-3226",
+    "test": {
+      "accuracy": 0.852,
+      "f1_macro": 0.7965,
+      "f1_clase_positiva": 0.6901,
+      "f1_clase_negativa": 0.9028,
+      "precision_macro": 0.7709,
+      "recall_macro": 0.8478,
+      "precision_clase_positiva": 0.5852,
+      "recall_clase_positiva": 0.8408
+    },
+    "matriz_confusion": {
+      "TP": 206,
+      "TN": 859,
+      "FP": 146,
+      "FN": 39
+    }
+  }
+}
