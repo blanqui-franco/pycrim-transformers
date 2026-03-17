@@ -1,0 +1,58 @@
+{
+  "experimento": {
+    "id": "CLASICO-MEJOR",
+    "fecha": "2026-03-17 13:14",
+    "responsable": "Fatima Ferreira - Blanca Franco",
+    "descripcion": "Reproducción del mejor resultado de algoritmos clásicos — Regresión Logística configuración óptima"
+  },
+  "modelo": {
+    "nombre": "Regresión Logística",
+    "libreria": "scikit-learn",
+    "parametros": {
+      "max_iter": 2000,
+      "solver": "lbfgs"
+    }
+  },
+  "preprocesamiento": {
+    "vectorizador": "CountVectorizer (TF)",
+    "ngram_range": "(3, 3)",
+    "stop_words": "No",
+    "stemming": "Sí — SnowballStemmer español",
+    "min_df": 3
+  },
+  "datos": {
+    "dataset": "PyCrim",
+    "archivo": "corpusJurisprudence.txt",
+    "zenodo": "https://zenodo.org/records/14373749",
+    "split_train": 0.75,
+    "split_test": 0.25,
+    "split_estrategia": "aleatorio_sin_estratificacion",
+    "random_state": 0,
+    "total_muestras": 5000,
+    "train_muestras": 3750,
+    "test_muestras": 1250,
+    "balance_clases": {
+      "clase_0_pct": 80.94,
+      "clase_1_pct": 19.06
+    }
+  },
+  "resultados": {
+    "tiempo_minutos": 7.15,
+    "test": {
+      "exactitud": 0.8928,
+      "f1_macro": 0.8209,
+      "f1_clase_positiva": 0.7074,
+      "f1_clase_negativa": 0.9344,
+      "precision_macro": 0.8403,
+      "exhaustividad_macro": 0.8052,
+      "precision_clase_positiva": 0.7606,
+      "exhaustividad_clase_positiva": 0.6612
+    },
+    "matriz_confusion": {
+      "TP": 162,
+      "TN": 954,
+      "FP": 51,
+      "FN": 83
+    }
+  }
+}
