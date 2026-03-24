@@ -1,0 +1,75 @@
+{
+  "experimento": {
+    "id": "EXP-018",
+    "fecha": "2026-03-24 22:36",
+    "responsable": "Fatima Ferreira - Blanca Franco",
+    "descripcion": "BETO con fine tuning — semilla 42",
+    "semilla": 42
+  },
+  "modelo": {
+    "nombre": "BETO",
+    "nombre_huggingface": "dccuchile/bert-base-spanish-wwm-cased",
+    "modalidad": "con_fine_tuning",
+    "num_labels": 2
+  },
+  "tokenizacion": {
+    "max_length": 512,
+    "stride": 384,
+    "estrategia": "sliding_window_manual",
+    "padding": "manual_con_pad_token_id"
+  },
+  "entrenamiento": {
+    "epochs": 7,
+    "batch_size": 16,
+    "learning_rate": 5e-06,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "warmup_steps": 500,
+    "fp16": true,
+    "early_stopping_patience": 3,
+    "class_weights": true,
+    "aggregacion_predicciones": "promedio_probabilidades_por_documento"
+  },
+  "datos": {
+    "dataset": "PyCrim",
+    "archivo": "corpusJurisprudence.txt",
+    "zenodo": "https://zenodo.org/records/14373749",
+    "split_train": 0.7,
+    "split_val": 0.15,
+    "split_test": 0.15,
+    "split_estrategia": "aleatorio_estratificado",
+    "random_state": 42,
+    "total_muestras": 5000,
+    "balance_clases": {
+      "clase_0_pct": 80.94,
+      "clase_1_pct": 19.06
+    }
+  },
+  "entorno": {
+    "python_version": "3.12.13",
+    "torch_version": "2.10.0+cu128",
+    "transformers_version": "5.0.0",
+    "plataforma": "Google Colab",
+    "gpu": "NVIDIA A100-SXM4-40GB"
+  },
+  "resultados": {
+    "tiempo_minutos": 20.49,
+    "mejor_epoch": "/content/drive/MyDrive/Proyecto/PyCrim_experiments/EXP-018/checkpoints/checkpoint-7656",
+    "test": {
+      "accuracy": 0.892,
+      "f1_macro": 0.8291,
+      "f1_clase_positiva": 0.7254,
+      "f1_clase_negativa": 0.9328,
+      "precision_macro": 0.8219,
+      "recall_macro": 0.8371,
+      "precision_clase_positiva": 0.7039,
+      "recall_clase_positiva": 0.7483
+    },
+    "matriz_confusion": {
+      "TP": 107,
+      "TN": 562,
+      "FP": 45,
+      "FN": 36
+    }
+  }
+}
