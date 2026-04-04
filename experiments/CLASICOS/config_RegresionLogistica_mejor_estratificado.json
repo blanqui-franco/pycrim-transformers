@@ -3,7 +3,7 @@
     "id": "CLASICO-MEJOR-SPLIT-ESTRATIFICADO",
     "fecha": "2026-04-04 14:35",
     "responsable": "Fatima Ferreira - Blanca Franco",
-    "descripcion": "Reproducción del mejor resultado de algoritmos clásicos — Regresión Logística configuración óptima. Split 85/15 estratificado con random_state=42 para comparación directa con experimentos Transformer (mismo conjunto de prueba)."
+    "descripcion": "Reproducción del mejor resultado de algoritmos clásicos — Regresión Logística configuración óptima. Split 85/15 estratificado con random_state=42 para comparación directa con experimentos Transformer, mismo conjunto de prueba."
   },
   "modelo": {
     "nombre": "Regresión Logística",
