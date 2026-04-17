@@ -275,54 +275,7 @@ plt.savefig(PNG_PATH, dpi=150, bbox_inches="tight")
 plt.show()
 print(f"✅ PNG guardado en: {PNG_PATH}")
 
-import os, shutil, subprocess
 
-commit_msg = 'LR mejor config — split 85/15 estratificado random_state=42'
-
-# Leer token
-with open("/content/drive/MyDrive/Proyecto/github_token.txt") as f:
-    token = f.read().strip()
-
-GITHUB_USER = "blanqui-franco"
-GITHUB_REPO = "pycrim-transformers"
-REPO_PATH   = f"/content/{GITHUB_REPO}"
-REPO_URL    = f"https://{GITHUB_USER}:{token}@github.com/{GITHUB_USER}/{GITHUB_REPO}.git"
-
-# Clonar si no existe, actualizar si ya existe
-if not os.path.exists(REPO_PATH):
-    subprocess.run(["git", "clone", REPO_URL, REPO_PATH], check=True)
-    print("✅ Repo clonado")
-else:
-    subprocess.run(["git", "-C", REPO_PATH, "pull"], check=True)
-    print("✅ Repo actualizado")
-
-# Configurar identidad
-subprocess.run(["git", "-C", REPO_PATH, "config", "user.email", "blanquisaldivar9@gmail.com"], check=True)
-subprocess.run(["git", "-C", REPO_PATH, "config", "user.name", "blanqui-franco"], check=True)
-
-# Copiar archivos al repo
-carpeta_destino = os.path.join(REPO_PATH, "experiments", "CLASICOS")
-os.makedirs(carpeta_destino, exist_ok=True)
-
-# Copiar JSON y PNG
-shutil.copy(
-    f"{OUTPUT_DIR}/config_RegresionLogistica_mejor_estratificado.json",
-    carpeta_destino
-)
-shutil.copy(
-    f"{OUTPUT_DIR}/confusion_matrix_LR_estratificado.png",
-    carpeta_destino
-)
-print("✅ JSON y PNG copiados al repo local")
-
-# Commit y push
-subprocess.run(["git", "-C", REPO_PATH, "add", "experiments/CLASICOS/"], check=True)
-
-result_commit = subprocess.run(
-    ["git", "-C", REPO_PATH, "commit", "-m", commit_msg],
-    capture_output=True, text=True
-)
-print(result_commit.stdout)
 
 if result_commit.returncode == 0:
     subprocess.run(["git", "-C", REPO_PATH, "push", REPO_URL, "main"], check=True)
