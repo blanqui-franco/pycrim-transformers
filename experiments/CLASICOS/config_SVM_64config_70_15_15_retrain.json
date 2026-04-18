@@ -1,0 +1,70 @@
+{
+  "experimento": {
+    "id": "CLASICO-64CONFIG-70-15-15-CON-REENTRENAMIENTO",
+    "fecha": "2026-04-18 22:16",
+    "responsable": "Fatima Ferreira - Blanca Franco",
+    "descripcion": "Búsqueda exhaustiva de 64 configuraciones sobre algoritmos clásicos. Split  70/15/15 estratificado (seed=42), idéntico al de los Transformers. Selección de mejor configuración por F1 Macro en validación (15%). Se RE-ENTRENA sobre train+val (85%) para evaluación final en test (15%). Umbral de decisión optimizado sobre validación (modelo train 70%), alineado con Transformers. class_weight=balanced en LR/RF/SVM y class_prior uniforme en NB, alineado con compute_class_weight de los Transformers (desbalanceo 80/20). "
+  },
+  "decisiones_metodologicas": {
+    "con_reentrenamiento": "El modelo final se re-entrena sobre train+val (85%). Esto permite comparar el impacto del re-entrenamiento frente al experimento que evalúa el modelo entrenado solo en train (70%).",
+    "umbral_en_validacion": "El umbral óptimo se busca usando el modelo entrenado en train(70%), no el re-entrenado. Garantiza que el test nunca influye en la selección del umbral, alineado con  los Transformers.",
+    "class_weight": "class_weight='balanced' en LR, RF, SVM; class_prior=[0.5,0.5] en NB. Alineado con compute_class_weight('balanced') de los experimentos Transformer para compensar el desbalanceo 80/20 del corpus PyCrim."
+  },
+  "busqueda": {
+    "total_configuraciones": 64,
+    "criterio_seleccion": "F1 Macro en conjunto de validacion (15%)",
+    "archivo_resultados": "resultados_val_70_15_15_retrain.csv"
+  },
+  "mejor_configuracion": {
+    "algoritmo": "SVM",
+    "ngram_range": 4,
+    "stop_words": "Con",
+    "stemming": "Con",
+    "min_df": 3,
+    "vectorizador": "TF-IDF",
+    "f1_macro_validacion": 0.8192,
+    "umbral_decision": 0.57
+  },
+  "datos": {
+    "dataset": "PyCrim",
+    "archivo": "corpusJurisprudence.txt",
+    "zenodo": "https://zenodo.org/records/14373749",
+    "split_train": 0.7,
+    "split_val": 0.15,
+    "split_test": 0.15,
+    "split_estrategia": "estratificado",
+    "random_state": 42,
+    "total_muestras": 5000,
+    "train_muestras": 3500,
+    "val_muestras": 750,
+    "test_muestras": 750,
+    "entrenamiento_final": "train + val combinados (85%)",
+    "balance_clases_test": {
+      "clase_0_n": 607,
+      "clase_1_n": 143,
+      "clase_0_pct": 80.93,
+      "clase_1_pct": 19.07
+    }
+  },
+  "resultados": {
+    "tiempo_minutos": 35.17,
+    "test": {
+      "exactitud": 0.888,
+      "f1_macro": 0.7958,
+      "f1_clase_positiva": 0.6585,
+      "f1_clase_negativa": 0.933,
+      "precision_macro": 0.8453,
+      "exhaustividad_macro": 0.7651,
+      "precision_clase_positiva": 0.7864,
+      "exhaustividad_clase_positiva": 0.5664,
+      "umbral_decision": 0.57,
+      "f1_macro_validacion": 0.8274
+    },
+    "matriz_confusion": {
+      "TP": 81,
+      "TN": 585,
+      "FP": 22,
+      "FN": 62
+    }
+  }
+}
