@@ -3,7 +3,7 @@
     "id": "CLASICO-64CONFIG-70-15-15-SIN-REENTRENAMIENTO",
     "fecha": "2026-04-17 13:30",
     "responsable": "Fatima Ferreira - Blanca Franco",
-    "descripcion": "Búsqueda exhaustiva de 64 configuraciones sobre algoritmos clásicos. Split genuino 70/15/15 estratificado (seed=42), idéntico al de los Transformers. Selección de mejor configuración por F1 Macro en validación (15%). El modelo entrenado en train (70%) se evalúa directamente en test (15%) SIN re-entrenamiento, garantizando comparación simétrica con Transformers. class_weight=balanced en LR/RF/SVM y class_prior uniforme en NB, alineado con compute_class_weight de los Transformers (desbalanceo 80/20). Umbral de decisión optimizado sobre validación, alineado con Transformers."
+    "descripcion": "Búsqueda exhaustiva de 64 configuraciones sobre algoritmos clásicos. Split  70/15/15 estratificado (seed=42), idéntico al de los Transformers. Selección de mejor configuración por F1 Macro en validación (15%). El modelo entrenado en train (70%) se evalúa directamente en test (15%) SIN re-entrenamiento, garantizando comparación simétrica con Transformers. class_weight=balanced en LR/RF/SVM y class_prior uniforme en NB, alineado con compute_class_weight de los Transformers (desbalanceo 80/20). Umbral de decisión optimizado sobre validación, alineado con Transformers."
   },
   "decisiones_metodologicas": {
     "sin_reentrenamiento": "El modelo final es el entrenado en train (70%). Esto garantiza que clásicos y Transformers compiten con exactamente la misma cantidad de datos de entrenamiento.",
