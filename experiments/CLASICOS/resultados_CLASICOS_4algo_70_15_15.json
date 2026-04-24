@@ -1,9 +1,9 @@
 {
   "experimento": {
     "id": "CLASICO-EVALUACION-FINAL-4ALGO-70-15-15",
-    "fecha": "2026-04-24 03:12",
+    "fecha": "2026-04-24 04:53",
     "responsable": "Fatima Ferreira - Blanca Franco",
-    "descripcion": "Evaluación final en test de los 4 mejores algoritmos clásicos. Configs elegidas por F1 Macro en validación (búsqueda previa de 64 configs). Split genuino 70/15/15 estratificado (seed=42), idéntico a Transformers. Sin re-entrenamiento: train 70% en ambos lados. Umbral buscado en val con np.arange(0.50, 0.601, 0.005), idéntico al procedimiento de los Transformers. class_weight=balanced en LR/RF/SVM, class_prior=[0.5,0.5] en NB."
+    "descripcion": "Evaluación final en test de los 4 mejores algoritmos clásicos. Configs elegidas por F1 Macro en validación (búsqueda previa de 64 configs). Split genuino 70/15/15 estratificado (seed=42), idéntico a Transformers. Sin re-entrenamiento: train 70% en ambos lados. Umbral buscado en val con np.arange(0.20, 0.81, 0.01), idéntico al procedimiento de los Transformers. class_weight=balanced en LR/RF/SVM, class_prior=[0.5,0.5] en NB."
   },
   "simetria_con_transformers": {
     "split": "70/15/15 estratificado, seed=42",
@@ -27,7 +27,7 @@
     }
   },
   "resultados": {
-    "tiempo_minutos": 52.25,
+    "tiempo_minutos": 45.98,
     "algoritmos": {
       "NB": {
         "configuracion": {
@@ -38,7 +38,7 @@
           "vectorizador": "TF",
           "f1_macro_val_config": 0.7835
         },
-        "umbral_decision": 0.5,
+        "umbral_decision": 0.29,
         "f1_macro_val_umbral": 0.7835,
         "test": {
           "exactitud": 0.872,
@@ -66,23 +66,23 @@
           "vectorizador": "TF",
           "f1_macro_val_config": 0.8146
         },
-        "umbral_decision": 0.51,
-        "f1_macro_val_umbral": 0.818,
+        "umbral_decision": 0.32,
+        "f1_macro_val_umbral": 0.8426,
         "test": {
-          "exactitud": 0.8947,
-          "f1_macro": 0.828,
-          "f1_clase_positiva": 0.7208,
-          "f1_clase_negativa": 0.9351,
-          "precision_macro": 0.8307,
-          "exhaustividad_macro": 0.8253,
-          "precision_clase_positiva": 0.7286,
-          "exhaustividad_clase_positiva": 0.7133
+          "exactitud": 0.9013,
+          "f1_macro": 0.8443,
+          "f1_clase_positiva": 0.75,
+          "f1_clase_negativa": 0.9385,
+          "precision_macro": 0.8359,
+          "exhaustividad_macro": 0.8535,
+          "precision_clase_positiva": 0.7255,
+          "exhaustividad_clase_positiva": 0.7762
         },
         "matriz_confusion": {
-          "TP": 102,
-          "TN": 569,
-          "FP": 38,
-          "FN": 41
+          "TP": 111,
+          "TN": 565,
+          "FP": 42,
+          "FN": 32
         }
       },
       "RF": {
@@ -94,23 +94,23 @@
           "vectorizador": "TF",
           "f1_macro_val_config": 0.785
         },
-        "umbral_decision": 0.515,
-        "f1_macro_val_umbral": 0.7853,
+        "umbral_decision": 0.39,
+        "f1_macro_val_umbral": 0.7985,
         "test": {
-          "exactitud": 0.88,
-          "f1_macro": 0.7689,
-          "f1_clase_positiva": 0.6087,
-          "f1_clase_negativa": 0.9291,
-          "precision_macro": 0.8472,
-          "exhaustividad_macro": 0.7308,
-          "precision_clase_positiva": 0.8046,
-          "exhaustividad_clase_positiva": 0.4895
+          "exactitud": 0.8827,
+          "f1_macro": 0.8139,
+          "f1_clase_positiva": 0.7007,
+          "f1_clase_negativa": 0.927,
+          "precision_macro": 0.8077,
+          "exhaustividad_macro": 0.8206,
+          "precision_clase_positiva": 0.6821,
+          "exhaustividad_clase_positiva": 0.7203
         },
         "matriz_confusion": {
-          "TP": 70,
-          "TN": 590,
-          "FP": 17,
-          "FN": 73
+          "TP": 103,
+          "TN": 559,
+          "FP": 48,
+          "FN": 40
         }
       },
       "SVM": {
@@ -122,23 +122,23 @@
           "vectorizador": "TF-IDF",
           "f1_macro_val_config": 0.8192
         },
-        "umbral_decision": 0.595,
-        "f1_macro_val_umbral": 0.8281,
+        "umbral_decision": 0.57,
+        "f1_macro_val_umbral": 0.8274,
         "test": {
-          "exactitud": 0.884,
-          "f1_macro": 0.7878,
-          "f1_clase_positiva": 0.6449,
-          "f1_clase_negativa": 0.9307,
-          "precision_macro": 0.8379,
-          "exhaustividad_macro": 0.7573,
-          "precision_clase_positiva": 0.7745,
-          "exhaustividad_clase_positiva": 0.5524
+          "exactitud": 0.8853,
+          "f1_macro": 0.7923,
+          "f1_clase_positiva": 0.6532,
+          "f1_clase_negativa": 0.9313,
+          "precision_macro": 0.8377,
+          "exhaustividad_macro": 0.7634,
+          "precision_clase_positiva": 0.7714,
+          "exhaustividad_clase_positiva": 0.5664
         },
         "matriz_confusion": {
-          "TP": 79,
-          "TN": 584,
-          "FP": 23,
-          "FN": 64
+          "TP": 81,
+          "TN": 583,
+          "FP": 24,
+          "FN": 62
         }
       }
     }
