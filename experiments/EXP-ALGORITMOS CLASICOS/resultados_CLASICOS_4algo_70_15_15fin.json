@@ -1,0 +1,146 @@
+{
+  "experimento": {
+    "id": "CLASICO-EVALUACION-FINAL-4ALGO-70-15-15",
+    "fecha": "2026-04-24 05:16",
+    "responsable": "Fatima Ferreira - Blanca Franco",
+    "descripcion": "Evaluación final en test de los 4 mejores algoritmos clásicos. Configs elegidas por F1 Macro en validación (búsqueda previa de 64 configs). Split genuino 70/15/15 estratificado (seed=42), idéntico a Transformers. Sin re-entrenamiento: train 70% en ambos lados. Umbral buscado en val con np.arange(0.50, 0.601, 0.005), idéntico al procedimiento de los Transformers. class_weight=balanced en LR/RF/SVM, class_prior=[0.5,0.5] en NB."
+  },
+  "simetria_con_transformers": {
+    "split": "70/15/15 estratificado, seed=42",
+    "entrenamiento": "train 70% únicamente, sin re-entrenamiento",
+    "umbral_rango": "np.arange(0.50, 0.601, 0.005)",
+    "umbral_criterio": "F1 Macro en validación",
+    "desbalanceo": "class_weight=balanced / class_prior uniforme",
+    "evaluacion": "test 15%, una sola vez por algoritmo"
+  },
+  "datos": {
+    "dataset": "PyCrim",
+    "total": 5000,
+    "train": 3500,
+    "val": 750,
+    "test": 750,
+    "balance_test": {
+      "clase_0_n": 607,
+      "clase_1_n": 143,
+      "clase_0_pct": 80.93,
+      "clase_1_pct": 19.07
+    }
+  },
+  "resultados": {
+    "tiempo_minutos": 176.67,
+    "algoritmos": {
+      "NB": {
+        "configuracion": {
+          "ngram_range": 4,
+          "stop_words": "Sin",
+          "stemming": "Con",
+          "min_df": 2,
+          "vectorizador": "TF",
+          "f1_macro_val_config": 0.7835
+        },
+        "umbral_decision": 0.5,
+        "f1_macro_val_umbral": 0.7835,
+        "test": {
+          "exactitud": 0.872,
+          "f1_macro": 0.8093,
+          "f1_clase_positiva": 0.7,
+          "f1_clase_negativa": 0.9186,
+          "precision_macro": 0.7893,
+          "exhaustividad_macro": 0.8381,
+          "precision_clase_positiva": 0.6328,
+          "exhaustividad_clase_positiva": 0.7832
+        },
+        "matriz_confusion": {
+          "TP": 112,
+          "TN": 542,
+          "FP": 65,
+          "FN": 31
+        }
+      },
+      "LR": {
+        "configuracion": {
+          "ngram_range": 4,
+          "stop_words": "Sin",
+          "stemming": "Con",
+          "min_df": 3,
+          "vectorizador": "TF",
+          "f1_macro_val_config": 0.8146
+        },
+        "umbral_decision": 0.51,
+        "f1_macro_val_umbral": 0.818,
+        "test": {
+          "exactitud": 0.8947,
+          "f1_macro": 0.828,
+          "f1_clase_positiva": 0.7208,
+          "f1_clase_negativa": 0.9351,
+          "precision_macro": 0.8307,
+          "exhaustividad_macro": 0.8253,
+          "precision_clase_positiva": 0.7286,
+          "exhaustividad_clase_positiva": 0.7133
+        },
+        "matriz_confusion": {
+          "TP": 102,
+          "TN": 569,
+          "FP": 38,
+          "FN": 41
+        }
+      },
+      "RF": {
+        "configuracion": {
+          "ngram_range": 4,
+          "stop_words": "Con",
+          "stemming": "Con",
+          "min_df": 2,
+          "vectorizador": "TF",
+          "f1_macro_val_config": 0.785
+        },
+        "umbral_decision": 0.515,
+        "f1_macro_val_umbral": 0.7853,
+        "test": {
+          "exactitud": 0.88,
+          "f1_macro": 0.7689,
+          "f1_clase_positiva": 0.6087,
+          "f1_clase_negativa": 0.9291,
+          "precision_macro": 0.8472,
+          "exhaustividad_macro": 0.7308,
+          "precision_clase_positiva": 0.8046,
+          "exhaustividad_clase_positiva": 0.4895
+        },
+        "matriz_confusion": {
+          "TP": 70,
+          "TN": 590,
+          "FP": 17,
+          "FN": 73
+        }
+      },
+      "SVM": {
+        "configuracion": {
+          "ngram_range": 4,
+          "stop_words": "Con",
+          "stemming": "Con",
+          "min_df": 3,
+          "vectorizador": "TF-IDF",
+          "f1_macro_val_config": 0.8192
+        },
+        "umbral_decision": 0.595,
+        "f1_macro_val_umbral": 0.8281,
+        "test": {
+          "exactitud": 0.884,
+          "f1_macro": 0.7878,
+          "f1_clase_positiva": 0.6449,
+          "f1_clase_negativa": 0.9307,
+          "precision_macro": 0.8379,
+          "exhaustividad_macro": 0.7573,
+          "precision_clase_positiva": 0.7745,
+          "exhaustividad_clase_positiva": 0.5524
+        },
+        "matriz_confusion": {
+          "TP": 79,
+          "TN": 584,
+          "FP": 23,
+          "FN": 64
+        }
+      }
+    }
+  }
+}

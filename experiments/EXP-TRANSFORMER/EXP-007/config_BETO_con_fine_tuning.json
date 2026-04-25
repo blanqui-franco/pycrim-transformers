@@ -1,0 +1,77 @@
+{
+  "experimento": {
+    "id": "EXP-007",
+    "fecha": "2026-03-06 14:48",
+    "responsable": "Fatima Ferreira - Blanca Franco",
+    "descripcion": "BETO con fine tuning — semilla 42",
+    "semilla": 42
+  },
+  "modelo": {
+    "nombre": "BETO",
+    "nombre_huggingface": "dccuchile/bert-base-spanish-wwm-cased",
+    "modalidad": "con_fine_tuning",
+    "num_labels": 2
+  },
+  "tokenizacion": {
+    "max_length": 512,
+    "stride": 256,
+    "estrategia": "sliding_window_manual",
+    "padding": "manual_con_pad_token_id"
+  },
+  "entrenamiento": {
+    "epochs": 5,
+    "batch_size": 16,
+    "learning_rate": 3e-05,
+    "gradient_accumulation_steps": 2,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "warmup_steps": 300,
+    "fp16": true,
+    "early_stopping_patience": 3,
+    "class_weights": "amplificados_2.5x",
+    "aggregacion_predicciones": "promedio_probabilidades_por_documento",
+    "metric_for_best_model": "f1_macro"
+  },
+  "datos": {
+    "dataset": "PyCrim",
+    "archivo": "corpusJurisprudence.txt",
+    "zenodo": "https://zenodo.org/records/14373749",
+    "split_train": 0.7,
+    "split_val": 0.15,
+    "split_test": 0.15,
+    "split_estrategia": "aleatorio_estratificado",
+    "random_state": 42,
+    "total_muestras": 5000,
+    "balance_clases": {
+      "clase_0_pct": 80.94,
+      "clase_1_pct": 19.06
+    }
+  },
+  "entorno": {
+    "python_version": "3.12.12",
+    "torch_version": "2.10.0+cu128",
+    "transformers_version": "5.0.0",
+    "plataforma": "Google Colab",
+    "gpu": "Tesla T4"
+  },
+  "resultados": {
+    "tiempo_minutos": 104.31,
+    "mejor_epoch": "/content/drive/MyDrive/ProyectoFatima/PyCrim_experiments/EXP-007/checkpoints/checkpoint-2708",
+    "test": {
+      "accuracy": 0.8547,
+      "f1_macro": 0.8004,
+      "f1_clase_positiva": 0.6964,
+      "f1_clase_negativa": 0.9045,
+      "precision_macro": 0.7725,
+      "recall_macro": 0.8621,
+      "precision_clase_positiva": 0.5787,
+      "recall_clase_positiva": 0.8741
+    },
+    "matriz_confusion": {
+      "TP": 125,
+      "TN": 516,
+      "FP": 91,
+      "FN": 18
+    }
+  }
+}
