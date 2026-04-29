@@ -188,11 +188,11 @@ python template_transformers_optimizado.py
 
 ## ✍️ Autores
 
-- **Blanca Franco** — Facultad Politécnica, Universidad Nacional de Asunción
-- **Fátima Ferreira** — Facultad Politécnica, Universidad Nacional de Asunción
-- **Cristian Amarilla Closs** — Facultad Politécnica, Universidad Nacional de Asunción
-- **Helena Gómez-Adorno** — Facultad Politécnica, Universidad Nacional de Asunción
-- **Romina Rojas Moreno** — Facultad Politécnica, Universidad Nacional de Asunción
+- **Blanca Franco** 
+- **Fátima Ferreira** 
+- **Cristian Amarilla Closs** 
+- **Helena Gómez-Adorno** 
+- **Romina Rojas Moreno**
 
 ---
 
