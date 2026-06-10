@@ -1,0 +1,963 @@
+{
+  "experimento": {
+    "fecha": "2026-05-10 10:18",
+    "modelo": "SVM",
+    "n_casos": 20,
+    "distribucion": {
+      "TP": 5,
+      "TN": 5,
+      "FP": 5,
+      "FN": 5
+    }
+  },
+  "casos": {
+    "TP": [
+      {
+        "idx_test": 311,
+        "top5_pos": [
+          {
+            "token": ", tal requier art",
+            "shap": 0.0199
+          },
+          {
+            "token": "sentenci tribunal primer instanci",
+            "shap": 0.0192
+          },
+          {
+            "token": "154 , 155 156",
+            "shap": 0.0186
+          },
+          {
+            "token": ", emisor fall impugn",
+            "shap": 0.0144
+          },
+          {
+            "token": "emisor fall impugn ,",
+            "shap": 0.0144
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "manifiest infund , dec",
+            "shap": -0.0128
+          },
+          {
+            "token": ", veint dias mes",
+            "shap": -0.0124
+          },
+          {
+            "token": "alimentari .- acuerd sentenci",
+            "shap": -0.0121
+          },
+          {
+            "token": "part querell , conform",
+            "shap": -0.0101
+          },
+          {
+            "token": "ramon baez caus ministeri",
+            "shap": -0.0098
+          }
+        ]
+      },
+      {
+        "idx_test": 26,
+        "top5_pos": [
+          {
+            "token": "ser juzg juec competent",
+            "shap": 0.0274
+          },
+          {
+            "token": "juzg juec competent imparcial",
+            "shap": 0.0274
+          },
+          {
+            "token": "derech defens art 16",
+            "shap": 0.0259
+          },
+          {
+            "token": "plant defens , deb",
+            "shap": 0.0244
+          },
+          {
+            "token": "caus , dad form",
+            "shap": 0.0205
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "agost 2.021 , dict",
+            "shap": -0.0214
+          },
+          {
+            "token": "2.021 , dict tribunal",
+            "shap": -0.0176
+          },
+          {
+            "token": "17 juni 2021 ,",
+            "shap": -0.0111
+          },
+          {
+            "token": "argument pas expon 1",
+            "shap": -0.0109
+          },
+          {
+            "token": "debid fund , ,",
+            "shap": -0.0106
+          }
+        ]
+      },
+      {
+        "idx_test": 254,
+        "top5_pos": [
+          {
+            "token": "blanc victor manuel nuñez",
+            "shap": 0.0421
+          },
+          {
+            "token": "ahor bien , entiend",
+            "shap": 0.0244
+          },
+          {
+            "token": "nuñez , integr sal",
+            "shap": 0.0226
+          },
+          {
+            "token": "manuel nuñez , integr",
+            "shap": 0.0214
+          },
+          {
+            "token": "sindulf blanc victor manuel",
+            "shap": 0.0182
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": ", 29 may 2012",
+            "shap": -0.0287
+          },
+          {
+            "token": "29 may 2012 vist",
+            "shap": -0.0287
+          },
+          {
+            "token": "sentenci numer trescient novent",
+            "shap": -0.0197
+          },
+          {
+            "token": "asuncion , 29 may",
+            "shap": -0.0184
+          },
+          {
+            "token": "turn doctor blanc nuñez",
+            "shap": -0.0158
+          }
+        ]
+      },
+      {
+        "idx_test": 318,
+        "top5_pos": [
+          {
+            "token": "fundamentos.- segund cuestien plant",
+            "shap": 0.0247
+          },
+          {
+            "token": "agravi expuest defens tecnic",
+            "shap": 0.0162
+          },
+          {
+            "token": "infund , pued dec",
+            "shap": 0.0154
+          },
+          {
+            "token": "correct si cas contrari",
+            "shap": 0.015
+          },
+          {
+            "token": "tribunal correct si cas",
+            "shap": 0.0147
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": ", fin determin procedent",
+            "shap": -0.0174
+          },
+          {
+            "token": "sentenci primer instanci bas",
+            "shap": -0.0125
+          },
+          {
+            "token": "incident acaec aut luz",
+            "shap": -0.0125
+          },
+          {
+            "token": "pag 221 sgtes ahor",
+            "shap": -0.0113
+          },
+          {
+            "token": "221 sgtes ahor bien",
+            "shap": -0.0113
+          }
+        ]
+      },
+      {
+        "idx_test": 232,
+        "top5_pos": [
+          {
+            "token": "fech 13 diciembr 2013",
+            "shap": 0.0159
+          },
+          {
+            "token": "incongruent citr petita- ,",
+            "shap": 0.0138
+          },
+          {
+            "token": "respect imposicien cost instanci",
+            "shap": 0.0131
+          },
+          {
+            "token": "establec cuant anteced ,",
+            "shap": 0.0131
+          },
+          {
+            "token": "ejerc defens acus ,",
+            "shap": 0.0129
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "dispong reenvi present caus",
+            "shap": -0.0156
+          },
+          {
+            "token": "mism fundament obstant ,",
+            "shap": -0.0115
+          },
+          {
+            "token": "correspond adentr analisis llev",
+            "shap": -0.0111
+          },
+          {
+            "token": "querell adhes , evacu",
+            "shap": -0.0109
+          },
+          {
+            "token": "propuest solucien jurid ,",
+            "shap": -0.0099
+          }
+        ]
+      }
+    ],
+    "TN": [
+      {
+        "idx_test": 414,
+        "top5_pos": [
+          {
+            "token": "aclaratori alud mantien mism",
+            "shap": 0.0185
+          },
+          {
+            "token": "alud mantien mism orden",
+            "shap": 0.0156
+          },
+          {
+            "token": "aclaratori fin resolv aclaratori",
+            "shap": 0.0141
+          },
+          {
+            "token": "procedent aclaratori fin resolv",
+            "shap": 0.0131
+          },
+          {
+            "token": "resolv aclaratori alud mantien",
+            "shap": 0.0131
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "deb ser rechaz aclaratori",
+            "shap": -0.0456
+          },
+          {
+            "token": "esencial resoluci6n dentr marc",
+            "shap": -0.0398
+          },
+          {
+            "token": "part esencial resoluci6n dentr",
+            "shap": -0.0398
+          },
+          {
+            "token": "efect , part oscur",
+            "shap": -0.0396
+          },
+          {
+            "token": "cuestion ces procedent aclaratori",
+            "shap": -0.0395
+          }
+        ]
+      },
+      {
+        "idx_test": 740,
+        "top5_pos": [
+          {
+            "token": "acuerd sentenci n 179",
+            "shap": 0.0272
+          },
+          {
+            "token": "10 marz 2017 ,",
+            "shap": 0.0166
+          },
+          {
+            "token": "pefi candi ministr expedient",
+            "shap": 0.0154
+          },
+          {
+            "token": "candi ministr expedient recurs",
+            "shap": 0.0131
+          },
+          {
+            "token": ", precis impugn cumpl",
+            "shap": 0.0125
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "sindulf blanc primer cuestien",
+            "shap": -0.0131
+          },
+          {
+            "token": "blanc primer cuestien plant",
+            "shap": -0.0131
+          },
+          {
+            "token": ", part disposit pertinent",
+            "shap": -0.0123
+          },
+          {
+            "token": "kirms , , secretari",
+            "shap": -0.012
+          },
+          {
+            "token": "torr kirms , ,",
+            "shap": -0.0118
+          }
+        ]
+      },
+      {
+        "idx_test": 655,
+        "top5_pos": [
+          {
+            "token": "resolucien dentr marc descrit",
+            "shap": 0.049
+          },
+          {
+            "token": "esencial resolucien dentr marc",
+            "shap": 0.049
+          },
+          {
+            "token": "part esencial resolucien dentr",
+            "shap": 0.049
+          },
+          {
+            "token": "modifiqu part esencial resolucien",
+            "shap": 0.0298
+          },
+          {
+            "token": "marc fundamentaci6n , medul",
+            "shap": 0.0153
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "deb ser rechaz aclaratori",
+            "shap": -0.0471
+          },
+          {
+            "token": "establec articul 388 cuant",
+            "shap": -0.0412
+          },
+          {
+            "token": "articul 388 cuant aclaratori",
+            "shap": -0.0412
+          },
+          {
+            "token": "388 cuant aclaratori ,",
+            "shap": -0.0412
+          },
+          {
+            "token": "efect , part oscur",
+            "shap": -0.0409
+          }
+        ]
+      },
+      {
+        "idx_test": 456,
+        "top5_pos": [
+          {
+            "token": ", recurr casacion abg",
+            "shap": 0.0225
+          },
+          {
+            "token": "solucien correspond respect ,",
+            "shap": 0.0164
+          },
+          {
+            "token": "denunci solucien correspond respect",
+            "shap": 0.0164
+          },
+          {
+            "token": "correspond respect , prof",
+            "shap": 0.0151
+          },
+          {
+            "token": "sentenci manifiest infund cuant",
+            "shap": 0.0142
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "candi , dij coinc",
+            "shap": -0.0152
+          },
+          {
+            "token": "privat libert diez aftos",
+            "shap": -0.0074
+          },
+          {
+            "token": "libert diez aftos ,",
+            "shap": -0.0074
+          },
+          {
+            "token": "sentenci definit , apel",
+            "shap": -0.0074
+          },
+          {
+            "token": "12 , 125 ,",
+            "shap": -0.0069
+          }
+        ]
+      },
+      {
+        "idx_test": 339,
+        "top5_pos": [
+          {
+            "token": "present caus sobres definit",
+            "shap": 0.0188
+          },
+          {
+            "token": "sentenci n 145 06",
+            "shap": 0.0168
+          },
+          {
+            "token": "cp , plaz prescripcien",
+            "shap": 0.0157
+          },
+          {
+            "token": "seleccion seri hech punibl",
+            "shap": 0.0146
+          },
+          {
+            "token": "luis mari benitez ,",
+            "shap": 0.0137
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "acuerd sentenci n 145",
+            "shap": -0.0123
+          },
+          {
+            "token": "17 , conviert delit",
+            "shap": -0.0109
+          },
+          {
+            "token": "inclus , sal penal",
+            "shap": -0.0083
+          },
+          {
+            "token": "supuest autor ilicit encuentr",
+            "shap": -0.0083
+          },
+          {
+            "token": "art 17 , conviert",
+            "shap": -0.0083
+          }
+        ]
+      }
+    ],
+    "FP": [
+      {
+        "idx_test": 240,
+        "top5_pos": [
+          {
+            "token": "ahor bien , entiend",
+            "shap": 0.0249
+          },
+          {
+            "token": "extincion accion penal aut",
+            "shap": 0.0153
+          },
+          {
+            "token": ", conform obra foj",
+            "shap": 0.0124
+          },
+          {
+            "token": "fech deb corr plaz",
+            "shap": 0.0121
+          },
+          {
+            "token": "derech oblig orden civil",
+            "shap": 0.0119
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "punibl difam , calumni",
+            "shap": -0.0129
+          },
+          {
+            "token": "may 2012 vist merit",
+            "shap": -0.0101
+          },
+          {
+            "token": "años seis mes ,",
+            "shap": -0.0086
+          },
+          {
+            "token": "imput inici proced ,",
+            "shap": -0.0081
+          },
+          {
+            "token": "inici proced , conform",
+            "shap": -0.0068
+          }
+        ]
+      },
+      {
+        "idx_test": 279,
+        "top5_pos": [
+          {
+            "token": "siet dias mes juli",
+            "shap": 0.1474
+          },
+          {
+            "token": "sentenci numer cuatrocient novent",
+            "shap": 0.1187
+          },
+          {
+            "token": "corre victor manuel nuñez",
+            "shap": 0.1041
+          },
+          {
+            "token": "puchet corre victor manuel",
+            "shap": 0.0699
+          },
+          {
+            "token": "alici puchet corre victor",
+            "shap": 0.0524
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "casacion interpuest abog isidr",
+            "shap": -0.032
+          },
+          {
+            "token": "privacion libert , comision",
+            "shap": -0.0225
+          },
+          {
+            "token": "libert , comision hech",
+            "shap": -0.0198
+          },
+          {
+            "token": "nuñez primer cuestion plant",
+            "shap": -0.017
+          },
+          {
+            "token": "inadmisibil recurs vot turn",
+            "shap": -0.0142
+          }
+        ]
+      },
+      {
+        "idx_test": 656,
+        "top5_pos": [
+          {
+            "token": "deb ser consider ,",
+            "shap": 0.0178
+          },
+          {
+            "token": "imposicion cost orden caus",
+            "shap": 0.0161
+          },
+          {
+            "token": "n 09 , fech",
+            "shap": 0.016
+          },
+          {
+            "token": "casacion , recurrent invoc",
+            "shap": 0.012
+          },
+          {
+            "token": "alcanc materi recurr -",
+            "shap": 0.0101
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "volunt person realiz anunci",
+            "shap": -0.0104
+          },
+          {
+            "token": "realiz anunci mal deb",
+            "shap": -0.0104
+          },
+          {
+            "token": "person realiz anunci mal",
+            "shap": -0.0104
+          },
+          {
+            "token": "segund parraf c.p.p ,",
+            "shap": -0.01
+          },
+          {
+            "token": "temer , mal fe",
+            "shap": -0.0097
+          }
+        ]
+      },
+      {
+        "idx_test": 738,
+        "top5_pos": [
+          {
+            "token": "olsen logic proces judicial",
+            "shap": 0.0252
+          },
+          {
+            "token": "hech punibl , ,",
+            "shap": 0.0247
+          },
+          {
+            "token": ", correspond analiz admisibil",
+            "shap": 0.02
+          },
+          {
+            "token": "correspond analiz admisibil recurs",
+            "shap": 0.017
+          },
+          {
+            "token": "expres nulid resolucien respect",
+            "shap": 0.0169
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "asoci financ alfa s.a",
+            "shap": -0.0213
+          },
+          {
+            "token": "financ alfa s.a ,",
+            "shap": -0.0194
+          },
+          {
+            "token": ", acuerd sentenci nro",
+            "shap": -0.0185
+          },
+          {
+            "token": "sal penal , dict",
+            "shap": -0.0124
+          },
+          {
+            "token": "oscar cacer cardoz s",
+            "shap": -0.011
+          }
+        ]
+      },
+      {
+        "idx_test": 350,
+        "top5_pos": [
+          {
+            "token": "formul practic sorte ley",
+            "shap": 0.0756
+          },
+          {
+            "token": "ped aclaratori formul practic",
+            "shap": 0.0481
+          },
+          {
+            "token": "aclaratori formul practic sorte",
+            "shap": 0.0481
+          },
+          {
+            "token": ", art 126 cpp",
+            "shap": 0.0442
+          },
+          {
+            "token": "ped aclaratori interpuest abog",
+            "shap": 0.038
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "caus propi baj patrocini",
+            "shap": -0.0787
+          },
+          {
+            "token": "gomez , , secretari",
+            "shap": -0.0245
+          },
+          {
+            "token": "ja ciud asuncien ,",
+            "shap": -0.0222
+          },
+          {
+            "token": "resolucion cuy aclaratori pretend",
+            "shap": -0.0178
+          },
+          {
+            "token": "f acuerd sentenci numer",
+            "shap": -0.0175
+          }
+        ]
+      }
+    ],
+    "FN": [
+      {
+        "idx_test": 294,
+        "top5_pos": [
+          {
+            "token": "auditori gestion judicial ,",
+            "shap": 0.0434
+          },
+          {
+            "token": ", tiemp resolv recurs",
+            "shap": 0.0419
+          },
+          {
+            "token": "nnn nnn turn ,",
+            "shap": 0.0199
+          },
+          {
+            "token": "art 126 cpp vot",
+            "shap": 0.0198
+          },
+          {
+            "token": "nnn turn , doctor",
+            "shap": 0.0191
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "normat art 126 cpp",
+            "shap": -0.0465
+          },
+          {
+            "token": "ped aclaratori devien improcedent",
+            "shap": -0.0401
+          },
+          {
+            "token": "efect ped aclaratori devien",
+            "shap": -0.0362
+          },
+          {
+            "token": "examin efect ped aclaratori",
+            "shap": -0.0362
+          },
+          {
+            "token": ", examin efect ped",
+            "shap": -0.0362
+          }
+        ]
+      },
+      {
+        "idx_test": 138,
+        "top5_pos": [
+          {
+            "token": "penal , dispon art",
+            "shap": 0.059
+          },
+          {
+            "token": "resolv ped aclaratori solicit",
+            "shap": 0.0314
+          },
+          {
+            "token": "impon cost procesal instanci",
+            "shap": 0.0281
+          },
+          {
+            "token": "carolin llan dij acuerd",
+            "shap": 0.0219
+          },
+          {
+            "token": "direccien general auditori gestien",
+            "shap": 0.0197
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": ", declar admisibil recurs",
+            "shap": -0.0283
+          },
+          {
+            "token": "4 impon cost procesal",
+            "shap": -0.0279
+          },
+          {
+            "token": "anot , registr notific",
+            "shap": -0.0184
+          },
+          {
+            "token": "ee turn , ministr",
+            "shap": -0.0163
+          },
+          {
+            "token": "ramirez candi diesel junghanns",
+            "shap": -0.0137
+          }
+        ]
+      },
+      {
+        "idx_test": 487,
+        "top5_pos": [
+          {
+            "token": "sol pued ser realiz",
+            "shap": 0.0442
+          },
+          {
+            "token": "recurrent , mism refier",
+            "shap": 0.0247
+          },
+          {
+            "token": "apel civil comercial ,",
+            "shap": 0.0235
+          },
+          {
+            "token": "65 codig penal part",
+            "shap": 0.0223
+          },
+          {
+            "token": "tribunal apel civil comercial",
+            "shap": 0.0206
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "3 codig form expon",
+            "shap": -0.0308
+          },
+          {
+            "token": "codig form expon escrit",
+            "shap": -0.0175
+          },
+          {
+            "token": "tribunal apel fund resolu",
+            "shap": -0.0163
+          },
+          {
+            "token": "prosigu dic , recurrent",
+            "shap": -0.0133
+          },
+          {
+            "token": "form expon escrit present",
+            "shap": -0.013
+          }
+        ]
+      },
+      {
+        "idx_test": 486,
+        "top5_pos": [
+          {
+            "token": ", analiz acuerd sentenci",
+            "shap": 0.0387
+          },
+          {
+            "token": "inocent in dubi pro",
+            "shap": 0.0197
+          },
+          {
+            "token": "7 declar competent tribunal",
+            "shap": 0.0185
+          },
+          {
+            "token": "adopt tribunal apel sentenci",
+            "shap": 0.0152
+          },
+          {
+            "token": "apel sentenci , alcanc",
+            "shap": 0.0152
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "non nnn nnn n",
+            "shap": -0.0161
+          },
+          {
+            "token": "n non nnn nnn",
+            "shap": -0.0148
+          },
+          {
+            "token": "corre dr luis mari",
+            "shap": -0.0142
+          },
+          {
+            "token": ", lectur atent integr",
+            "shap": -0.0137
+          },
+          {
+            "token": "mil quinc , sal",
+            "shap": -0.0104
+          }
+        ]
+      },
+      {
+        "idx_test": 741,
+        "top5_pos": [
+          {
+            "token": "suspensien condicional proced ,",
+            "shap": 0.0297
+          },
+          {
+            "token": ", sindulf blanc benitez",
+            "shap": 0.0277
+          },
+          {
+            "token": "fundamentacien cuant motiv invoc",
+            "shap": 0.0267
+          },
+          {
+            "token": "aiio bicentenari proctamacien paraguay",
+            "shap": 0.0265
+          },
+          {
+            "token": "sindulf blanc benitez rier",
+            "shap": 0.0247
+          }
+        ],
+        "top5_neg": [
+          {
+            "token": "casaci6n present juici sentenci",
+            "shap": -0.0336
+          },
+          {
+            "token": "articul 353 cpp ,",
+            "shap": -0.0197
+          },
+          {
+            "token": "comenz respond agravi recurrent",
+            "shap": -0.0191
+          },
+          {
+            "token": "cort suprem justici fall",
+            "shap": -0.0177
+          },
+          {
+            "token": ", tal dic articul",
+            "shap": -0.0159
+          }
+        ]
+      }
+    ]
+  }
+}
