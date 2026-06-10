@@ -1,0 +1,44 @@
+{
+  "experimento": {
+    "fecha": "2026-05-08 22:34",
+    "n_bootstrap": 10000,
+    "confianza": 0.95,
+    "semilla": 42,
+    "n_test": 750,
+    "modelos": [
+      "SVM",
+      "BETO con fine-tuning"
+    ]
+  },
+  "bootstrap": {
+    "SVM": {
+      "f1_macro_observado": 0.7878,
+      "ic_95_low": 0.7466,
+      "ic_95_high": 0.8268
+    },
+    "BETO": {
+      "f1_macro_observado": 0.8291,
+      "ic_95_low": 0.7931,
+      "ic_95_high": 0.8625
+    },
+    "diferencia_BETO_minus_SVM": {
+      "observada_pp": 4.13,
+      "ic_95_low_pp": -0.03,
+      "ic_95_high_pp": 8.36,
+      "p_value": 0.0259,
+      "significativo": false
+    }
+  },
+  "mcnemar": {
+    "tabla_contingencia": {
+      "a_ambos_correctos": 622,
+      "b_svm_correcto_beto_no": 41,
+      "c_beto_correcto_svm_no": 47,
+      "d_ambos_incorrectos": 40
+    },
+    "estadistico_chi2": 0.2841,
+    "p_value": 0.594,
+    "significativo": false,
+    "correccion_continuidad": true
+  }
+}

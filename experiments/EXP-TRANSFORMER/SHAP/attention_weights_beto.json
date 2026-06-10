@@ -1,0 +1,985 @@
+{
+  "experimento": {
+    "fecha": "2026-05-11 00:43",
+    "modelo": "BETO fine-tuning",
+    "checkpoint": "best_model_final",
+    "metodo": "attention weights — última capa, promedio cabezas, token CLS. Sliding window 512/384 para documentos largos. Subpalabras agrupadas. Tokens no informativos filtrados.",
+    "n_casos": 20,
+    "distribucion": {
+      "TP": 5,
+      "TN": 5,
+      "FP": 5,
+      "FN": 5
+    }
+  },
+  "casos": {
+    "TP": [
+      {
+        "idx_test": 556,
+        "pred": 1,
+        "proba_pos": 0.8324,
+        "n_fragmentos": 2,
+        "top_tokens": [
+          [
+            "costas",
+            0.1314
+          ],
+          [
+            "pronunciarse",
+            0.0567
+          ],
+          [
+            "asuncion",
+            0.0411
+          ],
+          [
+            "pedido",
+            0.0375
+          ],
+          [
+            "autos",
+            0.0327
+          ],
+          [
+            "procesales",
+            0.0312
+          ],
+          [
+            "recurso",
+            0.0293
+          ],
+          [
+            "imposicion",
+            0.0234
+          ],
+          [
+            "galeano",
+            0.0224
+          ],
+          [
+            "impuestas",
+            0.0188
+          ]
+        ]
+      },
+      {
+        "idx_test": 45,
+        "pred": 0,
+        "proba_pos": 0.3765,
+        "n_fragmentos": 4,
+        "top_tokens": [
+          [
+            "prosigue",
+            0.0417
+          ],
+          [
+            "pedido",
+            0.0321
+          ],
+          [
+            "debiendo",
+            0.032
+          ],
+          [
+            "levanta",
+            0.031
+          ],
+          [
+            "rodríguez",
+            0.0275
+          ],
+          [
+            "segunda",
+            0.0275
+          ],
+          [
+            "rodriguez",
+            0.0275
+          ],
+          [
+            "hacer",
+            0.0261
+          ],
+          [
+            "declarar",
+            0.0236
+          ],
+          [
+            "asunción",
+            0.0222
+          ]
+        ]
+      },
+      {
+        "idx_test": 26,
+        "pred": 1,
+        "proba_pos": 0.9336,
+        "n_fragmentos": 18,
+        "top_tokens": [
+          [
+            "separarse",
+            0.1393
+          ],
+          [
+            "apartamiento",
+            0.0799
+          ],
+          [
+            "escrito",
+            0.0782
+          ],
+          [
+            "casatorio",
+            0.0749
+          ],
+          [
+            "anular",
+            0.0697
+          ],
+          [
+            "improcedente",
+            0.0587
+          ],
+          [
+            "separacién",
+            0.046
+          ],
+          [
+            "presentaci6n",
+            0.0417
+          ],
+          [
+            "marciano",
+            0.0407
+          ],
+          [
+            "rivas",
+            0.0387
+          ]
+        ]
+      },
+      {
+        "idx_test": 718,
+        "pred": 0,
+        "proba_pos": 0.1646,
+        "n_fragmentos": 9,
+        "top_tokens": [
+          [
+            "anulado",
+            0.0993
+          ],
+          [
+            "nulidad",
+            0.0745
+          ],
+          [
+            "encausado",
+            0.0557
+          ],
+          [
+            "procederse",
+            0.0539
+          ],
+          [
+            "traslado",
+            0.0497
+          ],
+          [
+            "incurrido",
+            0.0488
+          ],
+          [
+            "correccién",
+            0.0469
+          ],
+          [
+            "invocando",
+            0.0437
+          ],
+          [
+            "resolver",
+            0.0437
+          ],
+          [
+            "infundado",
+            0.0433
+          ]
+        ]
+      },
+      {
+        "idx_test": 525,
+        "pred": 0,
+        "proba_pos": 0.1113,
+        "n_fragmentos": 8,
+        "top_tokens": [
+          [
+            "procedente",
+            0.0807
+          ],
+          [
+            "deben",
+            0.0688
+          ],
+          [
+            "costas",
+            0.0598
+          ],
+          [
+            "sugiero",
+            0.0531
+          ],
+          [
+            "corresponde",
+            0.0412
+          ],
+          [
+            "remi",
+            0.0388
+          ],
+          [
+            "excluyendo",
+            0.034
+          ],
+          [
+            "entiendo",
+            0.0327
+          ],
+          [
+            "prescripta",
+            0.0282
+          ],
+          [
+            "ahora",
+            0.0267
+          ]
+        ]
+      }
+    ],
+    "TN": [
+      {
+        "idx_test": 628,
+        "pred": 0,
+        "proba_pos": 0.2711,
+        "n_fragmentos": 5,
+        "top_tokens": [
+          [
+            "declarar",
+            0.1022
+          ],
+          [
+            "inadmisible",
+            0.0866
+          ],
+          [
+            "inadmisibilidad",
+            0.0716
+          ],
+          [
+            "escrito",
+            0.0474
+          ],
+          [
+            "interponer",
+            0.0452
+          ],
+          [
+            "recurrente",
+            0.0356
+          ],
+          [
+            "jodicini",
+            0.0347
+          ],
+          [
+            "orihuela",
+            0.0259
+          ],
+          [
+            "resolver",
+            0.0222
+          ],
+          [
+            "enviaran",
+            0.0222
+          ]
+        ]
+      },
+      {
+        "idx_test": 363,
+        "pred": 1,
+        "proba_pos": 0.843,
+        "n_fragmentos": 5,
+        "top_tokens": [
+          [
+            "rechazando",
+            0.1282
+          ],
+          [
+            "asuncion",
+            0.0875
+          ],
+          [
+            "escrito",
+            0.0787
+          ],
+          [
+            "declarar",
+            0.0423
+          ],
+          [
+            "rechazar",
+            0.04
+          ],
+          [
+            "confirmar",
+            0.0395
+          ],
+          [
+            "lucio",
+            0.0349
+          ],
+          [
+            "fenitez",
+            0.0345
+          ],
+          [
+            "segunda",
+            0.0308
+          ],
+          [
+            "pedido",
+            0.0214
+          ]
+        ]
+      },
+      {
+        "idx_test": 390,
+        "pred": 1,
+        "proba_pos": 0.6748,
+        "n_fragmentos": 21,
+        "top_tokens": [
+          [
+            "rechazar",
+            0.2043
+          ],
+          [
+            "improcedente",
+            0.0634
+          ],
+          [
+            "suspensién",
+            0.0524
+          ],
+          [
+            "inadmisibilidad",
+            0.0512
+          ],
+          [
+            "recutrente",
+            0.048
+          ],
+          [
+            "deviniendo",
+            0.0457
+          ],
+          [
+            "recurrente",
+            0.0444
+          ],
+          [
+            "interpone",
+            0.0432
+          ],
+          [
+            "extinguirse",
+            0.0425
+          ],
+          [
+            "suspensic",
+            0.0411
+          ]
+        ]
+      },
+      {
+        "idx_test": 83,
+        "pred": 0,
+        "proba_pos": 0.012,
+        "n_fragmentos": 9,
+        "top_tokens": [
+          [
+            "interpone",
+            0.0656
+          ],
+          [
+            "inadmisible",
+            0.0598
+          ],
+          [
+            "recursivo",
+            0.0592
+          ],
+          [
+            "declarado",
+            0.0458
+          ],
+          [
+            "presentado",
+            0.0408
+          ],
+          [
+            "inadmisibilidad",
+            0.038
+          ],
+          [
+            "infundado",
+            0.0284
+          ],
+          [
+            "planteado",
+            0.0271
+          ],
+          [
+            "casacionista",
+            0.0263
+          ],
+          [
+            "impugnante",
+            0.0257
+          ]
+        ]
+      },
+      {
+        "idx_test": 403,
+        "pred": 0,
+        "proba_pos": 0.0607,
+        "n_fragmentos": 7,
+        "top_tokens": [
+          [
+            "inadmisibilidad",
+            0.083
+          ],
+          [
+            "declarar",
+            0.0747
+          ],
+          [
+            "impugnativo",
+            0.0718
+          ],
+          [
+            "terminado",
+            0.07
+          ],
+          [
+            "acto",
+            0.0575
+          ],
+          [
+            "firmando",
+            0.0547
+          ],
+          [
+            "debié",
+            0.0529
+          ],
+          [
+            "inadmisible",
+            0.0382
+          ],
+          [
+            "caaguazi",
+            0.0368
+          ],
+          [
+            "admisibilidad",
+            0.035
+          ]
+        ]
+      }
+    ],
+    "FP": [
+      {
+        "idx_test": 105,
+        "pred": 1,
+        "proba_pos": 0.5817,
+        "n_fragmentos": 12,
+        "top_tokens": [
+          [
+            "hacer",
+            0.1101
+          ],
+          [
+            "remitascopias",
+            0.0707
+          ],
+          [
+            "extincion",
+            0.0636
+          ],
+          [
+            "tiempostiene",
+            0.055
+          ],
+          [
+            "faltantes",
+            0.0517
+          ],
+          [
+            "ericatisado",
+            0.0471
+          ],
+          [
+            "setecentant",
+            0.0457
+          ],
+          [
+            "contravenir",
+            0.0438
+          ],
+          [
+            "interrumpird",
+            0.0437
+          ],
+          [
+            "procede",
+            0.0404
+          ]
+        ]
+      },
+      {
+        "idx_test": 174,
+        "pred": 1,
+        "proba_pos": 0.9145,
+        "n_fragmentos": 4,
+        "top_tokens": [
+          [
+            "hacer",
+            0.1763
+          ],
+          [
+            "lugar",
+            0.1306
+          ],
+          [
+            "sobreseyendo",
+            0.0669
+          ],
+          [
+            "andrés",
+            0.0468
+          ],
+          [
+            "paraguay",
+            0.0321
+          ],
+          [
+            "declarar",
+            0.0315
+          ],
+          [
+            "corresponde",
+            0.0271
+          ],
+          [
+            "acusado",
+            0.025
+          ],
+          [
+            "pedido",
+            0.0244
+          ],
+          [
+            "inadmisible",
+            0.0231
+          ]
+        ]
+      },
+      {
+        "idx_test": 355,
+        "pred": 1,
+        "proba_pos": 0.9727,
+        "n_fragmentos": 7,
+        "top_tokens": [
+          [
+            "rechazar",
+            0.1759
+          ],
+          [
+            "rocesales",
+            0.0817
+          ],
+          [
+            "solicitado",
+            0.0629
+          ],
+          [
+            "corresponde",
+            0.0394
+          ],
+          [
+            "exonerando",
+            0.0391
+          ],
+          [
+            "costas",
+            0.0365
+          ],
+          [
+            "incurrié",
+            0.0351
+          ],
+          [
+            "hacerse",
+            0.0343
+          ],
+          [
+            "existié",
+            0.0337
+          ],
+          [
+            "correspond",
+            0.0337
+          ]
+        ]
+      },
+      {
+        "idx_test": 217,
+        "pred": 0,
+        "proba_pos": 0.0232,
+        "n_fragmentos": 10,
+        "top_tokens": [
+          [
+            "inadmisibilidad",
+            0.1712
+          ],
+          [
+            "inadmisible",
+            0.0663
+          ],
+          [
+            "prescripcional",
+            0.0538
+          ],
+          [
+            "ampos",
+            0.0485
+          ],
+          [
+            "prescripcion",
+            0.0472
+          ],
+          [
+            "prescripcidn",
+            0.0452
+          ],
+          [
+            "notificar",
+            0.044
+          ],
+          [
+            "declara",
+            0.043
+          ],
+          [
+            "rubén",
+            0.0335
+          ],
+          [
+            "alegar",
+            0.0318
+          ]
+        ]
+      },
+      {
+        "idx_test": 172,
+        "pred": 1,
+        "proba_pos": 0.9615,
+        "n_fragmentos": 6,
+        "top_tokens": [
+          [
+            "rechazo",
+            0.0988
+          ],
+          [
+            "improcedente",
+            0.0948
+          ],
+          [
+            "impugnativo",
+            0.0761
+          ],
+          [
+            "afirma",
+            0.0736
+          ],
+          [
+            "eximir",
+            0.0343
+          ],
+          [
+            "costas",
+            0.0312
+          ],
+          [
+            "pudiéndose",
+            0.0293
+          ],
+          [
+            "recurrente",
+            0.0275
+          ],
+          [
+            "litigante",
+            0.0264
+          ],
+          [
+            "jjuridico",
+            0.0256
+          ]
+        ]
+      }
+    ],
+    "FN": [
+      {
+        "idx_test": 269,
+        "pred": 0,
+        "proba_pos": 0.2867,
+        "n_fragmentos": 19,
+        "top_tokens": [
+          [
+            "rechazo",
+            0.1712
+          ],
+          [
+            "resolviendo",
+            0.0876
+          ],
+          [
+            "andrés",
+            0.0859
+          ],
+          [
+            "ignorando",
+            0.0846
+          ],
+          [
+            "inadmisible",
+            0.072
+          ],
+          [
+            "planteo",
+            0.0672
+          ],
+          [
+            "improcedente",
+            0.0617
+          ],
+          [
+            "transgredir",
+            0.0547
+          ],
+          [
+            "deviene",
+            0.049
+          ],
+          [
+            "omitido",
+            0.0483
+          ]
+        ]
+      },
+      {
+        "idx_test": 380,
+        "pred": 0,
+        "proba_pos": 0.0466,
+        "n_fragmentos": 21,
+        "top_tokens": [
+          [
+            "debiéndose",
+            0.1352
+          ],
+          [
+            "inadmisibilidad",
+            0.0922
+          ],
+          [
+            "rechazar",
+            0.0844
+          ],
+          [
+            "peticién",
+            0.0822
+          ],
+          [
+            "noneo",
+            0.0749
+          ],
+          [
+            "inadmisible",
+            0.055
+          ],
+          [
+            "marras",
+            0.0541
+          ],
+          [
+            "encuadra",
+            0.0506
+          ],
+          [
+            "revocar",
+            0.044
+          ],
+          [
+            "cuestionada",
+            0.0425
+          ]
+        ]
+      },
+      {
+        "idx_test": 745,
+        "pred": 1,
+        "proba_pos": 0.6096,
+        "n_fragmentos": 9,
+        "top_tokens": [
+          [
+            "extinguida",
+            0.1789
+          ],
+          [
+            "quebrantamiento",
+            0.0525
+          ],
+          [
+            "resolver",
+            0.0343
+          ],
+          [
+            "interpuesta",
+            0.0315
+          ],
+          [
+            "carolina",
+            0.0308
+          ],
+          [
+            "extinción",
+            0.0294
+          ],
+          [
+            "ministros",
+            0.0262
+          ],
+          [
+            "expediente",
+            0.0237
+          ],
+          [
+            "candia",
+            0.0231
+          ],
+          [
+            "persingola",
+            0.0226
+          ]
+        ]
+      },
+      {
+        "idx_test": 546,
+        "pred": 0,
+        "proba_pos": 0.0522,
+        "n_fragmentos": 11,
+        "top_tokens": [
+          [
+            "alega",
+            0.0794
+          ],
+          [
+            "autos",
+            0.0515
+          ],
+          [
+            "inobservancia",
+            0.0501
+          ],
+          [
+            "consideramos",
+            0.0463
+          ],
+          [
+            "impugna",
+            0.0456
+          ],
+          [
+            "debiéndose",
+            0.0448
+          ],
+          [
+            "ta",
+            0.0443
+          ],
+          [
+            "suspender",
+            0.0438
+          ],
+          [
+            "impugnacidn",
+            0.0419
+          ],
+          [
+            "recurrente",
+            0.0393
+          ]
+        ]
+      },
+      {
+        "idx_test": 676,
+        "pred": 0,
+        "proba_pos": 0.235,
+        "n_fragmentos": 42,
+        "top_tokens": [
+          [
+            "hacer",
+            0.1174
+          ],
+          [
+            "contesté",
+            0.0805
+          ],
+          [
+            "transcribié",
+            0.0746
+          ],
+          [
+            "dejar",
+            0.0724
+          ],
+          [
+            "anular",
+            0.0664
+          ],
+          [
+            "impugnados",
+            0.0641
+          ],
+          [
+            "absolucion",
+            0.0549
+          ],
+          [
+            "nnnecnenenneneneeeeneeccen",
+            0.0548
+          ],
+          [
+            "anulando",
+            0.0473
+          ],
+          [
+            "inifumdado",
+            0.0408
+          ]
+        ]
+      }
+    ]
+  }
+}

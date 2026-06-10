@@ -1,0 +1,81 @@
+{
+  "experimento": {
+    "id": "EXP-020",
+    "fecha": "2026-05-30 18:38",
+    "responsable": "Fatima Ferreira - Blanca Franco",
+    "descripcion": "LegalLongformer-ES con fine tuning — semilla 42",
+    "semilla": 42
+  },
+  "modelo": {
+    "nombre": "LegalLongformer-ES",
+    "nombre_huggingface": "Narrativa/legal-longformer-base-4096-spanish",
+    "modalidad": "con_fine_tuning",
+    "num_labels": 2,
+    "arquitectura_base": "RoBERTa (via RoBERTalex)",
+    "max_tokens_soportados": 4096,
+    "atencion": "sliding_window_local + global_en_CLS"
+  },
+  "tokenizacion": {
+    "max_length": 4096,
+    "stride": "no_aplica_longformer",
+    "estrategia": "documento_completo_sin_fragmentacion",
+    "padding": "max_length",
+    "global_attention": "token_CLS_posicion_0"
+  },
+  "entrenamiento": {
+    "epochs": 7,
+    "batch_size_por_dispositivo": 2,
+    "gradient_accumulation_steps": 8,
+    "effective_batch_size": 16,
+    "learning_rate": 5e-06,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "warmup_steps": 500,
+    "fp16": true,
+    "early_stopping_patience": 2,
+    "class_weights": true,
+    "aggregacion_predicciones": "promedio_probabilidades_por_documento"
+  },
+  "datos": {
+    "dataset": "PyCrim",
+    "archivo": "corpusJurisprudence.txt",
+    "zenodo": "https://zenodo.org/records/14373749",
+    "split_train": 0.7,
+    "split_val": 0.15,
+    "split_test": 0.15,
+    "split_estrategia": "aleatorio_estratificado",
+    "random_state": 42,
+    "total_muestras": 5000,
+    "balance_clases": {
+      "clase_0_pct": 80.94,
+      "clase_1_pct": 19.06
+    }
+  },
+  "entorno": {
+    "python_version": "3.12.13",
+    "torch_version": "2.11.0+cu128",
+    "transformers_version": "5.0.0",
+    "plataforma": "Google Colab",
+    "gpu": "NVIDIA A100-SXM4-40GB"
+  },
+  "resultados": {
+    "tiempo_minutos": 46.44,
+    "mejor_epoch": "/content/drive/MyDrive/Proyecto/PyCrim_experiments/EXP-020/checkpoints/checkpoint-1533",
+    "test": {
+      "accuracy": 0.8267,
+      "f1_macro": 0.7064,
+      "f1_clase_positiva": 0.5185,
+      "f1_clase_negativa": 0.8943,
+      "precision_macro": 0.717,
+      "recall_macro": 0.6978,
+      "precision_clase_positiva": 0.5512,
+      "recall_clase_positiva": 0.4895
+    },
+    "matriz_confusion": {
+      "TP": 70,
+      "TN": 550,
+      "FP": 57,
+      "FN": 73
+    }
+  }
+}
