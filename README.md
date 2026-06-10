@@ -82,14 +82,6 @@ python template_transformers_optimizado.py
 
 > Los scripts están adaptados para Google Colab con Google Drive. Para ejecución local, ajustar `ZIP_PATH` y `OUTPUT_DIR`.
 
----
-
-## Hallazgos clave
-
-1. **BETO supera a XLM-RoBERTa** (82.91% vs 82.42%) pese a su menor capacidad paramétrica, sugiriendo ventajas de la especialización monolingüe en dominios jurídicos.
-2. **Ventaja marginal sobre los clásicos:** la diferencia entre BETO y LR es de solo 0.11 puntos de F1-macro bajo el protocolo simétrico.
-3. **Sensibilidad al protocolo:** BETO mejora de 80.40% a 82.91% al pasar del protocolo base al optimizado.
-4. **Falsos negativos reducidos:** BETO detecta el 74.83% de los casos "Hace lugar" vs 55.24% de SVM, lo cual es relevante en el contexto judicial.
 
 ---
 
