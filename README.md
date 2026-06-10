@@ -21,7 +21,7 @@ Primera evaluación comparativa formal entre algoritmos clásicos de aprendizaje
 | Familia | Modelos |
 |---|---|
 | **Clásicos** | Logistic Regression, SVM, Random Forests, Naive Bayes |
-| **Transformer** | BETO, mBERT, XLM-RoBERTa egal Spanish LongFormer (con y sin fine-tuning) |
+| **Transformer** | BETO, mBERT, XLM-RoBERTa Legal Spanish LongFormer (con y sin fine-tuning) |
 
 **Protocolo experimental (simétrico):** partición estratificada 70/15/15, compensación de desbalanceo por pesos balanceados, optimización de umbral sobre validación, métrica principal: F1-macro.
 
